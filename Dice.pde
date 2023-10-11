@@ -8,8 +8,8 @@ int sum;
 float avgc = 0;
 
 void mousePressed(){
+  sum = 0;  
   redraw();
-  sum = 0;
 }
 
 void draw(){
