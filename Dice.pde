@@ -7,6 +7,15 @@ void setup(){
 int sum;
 float avgc = 0;
 
+void mousePressed(){
+  if(mouseX < 550 && mouseX > 450 && mouseY < 750 && mouseY > 700){
+    sum = 0; 
+    avgc = 0;
+  }
+  redraw();
+  sum = 0;
+}
+
 void draw(){
   
   strokeWeight(5);
@@ -35,15 +44,6 @@ void draw(){
   rect(450,700,100,50);
   fill(0);
   text("restart", 460, 740);
-}
-
-void mousePressed(){
-  if(mouseX < 550 && mouseX > 450 && mouseY < 750 && mouseY > 700){
-    sum = 0; 
-    avgc = 0;
-  }
-  redraw();
-  sum = 0;
 }
 
 class Dice{
