@@ -43,6 +43,7 @@ void mousePressed(){
     avgc = 0;
   }
   redraw();
+  sum = 0;
 }
 
 class Dice{
