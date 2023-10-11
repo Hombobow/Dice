@@ -8,10 +8,6 @@ int sum;
 float avgc = 0;
 
 void mousePressed(){
-  if(mouseX < 550 && mouseX > 450 && mouseY < 750 && mouseY > 700){
-    sum = 0; 
-    avgc = 0;
-  }
   redraw();
   sum = 0;
 }
@@ -39,11 +35,6 @@ void draw(){
   textSize(25);
   text("sum of rolls: " + sum, 150,200);
   text("avg of rolls: " + Double.toString(sum/avgc), 150, 250);
-  
-  
-  rect(450,700,100,50);
-  fill(0);
-  text("restart", 460, 740);
 }
 
 class Dice{
